@@ -1,4 +1,3 @@
-
 pipeline {
     agent none
 
@@ -31,5 +30,5 @@ pipeline {
             }
         }
     }
-
+}
 
