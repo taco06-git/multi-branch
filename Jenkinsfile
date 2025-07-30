@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Code pushed to PRODUCTION branch"
                 echo "Running job on PROD agent"
-                // Insert your build/deploy steps here
+                sh 'cat job'  // ✅ shell step to print the file named 'job'
             }
         }
 
@@ -26,9 +26,9 @@ pipeline {
             steps {
                 echo "Code pushed to DEVELOPMENT branch"
                 echo "Running job on DEV agent"
-                // Insert your build/test steps here
+                sh 'cat job'  // ✅ shell step to print the file named 'job'
             }
         }
     }
-
+}
 
